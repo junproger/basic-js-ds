@@ -28,7 +28,6 @@ function removeKFromList(l, k) {
 	while(true) {
 		if (node.next === null) {
 			return l;
-			break;
 		} else if (node.next.value === k) {
 			node.next = node.next.next;
 		} else if (node.value === k) {

@@ -22,7 +22,9 @@ class ListNode {
 };
 
 class Queue {
-	head = null;
+	constructor() {
+		this.head = null;
+	}
 	getUnderlyingList() {
 		return this.head;
 	};

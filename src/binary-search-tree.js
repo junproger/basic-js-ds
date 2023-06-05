@@ -7,7 +7,6 @@ const { NotImplementedError } = require('../extensions/index.js');
 * using Node from extensions
 */
 
-
 class TreeNode {
 	constructor(data) {
 		this.data = data;
@@ -17,7 +16,9 @@ class TreeNode {
 };
 
 class BinarySearchTree {
-	rootTree = null;
+	constructor() {
+		this.rootTree = null;
+	}
 	root() {
 		return this.rootTree;
 	};
@@ -120,7 +121,6 @@ class BinarySearchTree {
 		return node.data;
 	};
 };
-
 
 module.exports = {
   BinarySearchTree
